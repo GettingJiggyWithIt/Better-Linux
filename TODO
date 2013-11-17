@@ -1,25 +1,4 @@
-See if Trillian is worth it..
-Best music app? Musique Rhythmbox Banshee .. Owncloud support
-Geary vs thunderbird?
-Brackets/Chromium Live Reload
 lsb_release -a # Gets Ubuntu version
 netstat -anltp | grep "LISTEN" # See all open ports
 python -m SimpleHTTPServer # Start web server using current directory tree on port 8000
-make terminal look cool .bashrc/bashprofile
-Dropbox, spotify, deluge
 nagios
-git GIMP?
-configure selinux tor
-http://sourceforge.net/projects/phpvirtualbox/
-https://code.google.com/p/autokey/
-http://free.avg.com/us-en/download.prd-alf
-Rsync Skype Mixxx
-http://kate-editor.org/get-it/
-c9.io
-Gnome system monitor
-http://ubuntu-tweak.com/
-sudo service apport stop
-chromium-codecs-ffmpeg Install chromium-codecs-ffmpeg
-
-chromium-codecs-ffmpeg-extra
-tomahawk
