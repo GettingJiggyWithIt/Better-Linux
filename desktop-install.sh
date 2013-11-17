@@ -48,3 +48,7 @@ sudo add-apt-repository ppa:linrunner/tlp
 sudo apt-get update
 sudo apt-get install tlp tlp-rdw
 sudo tlp start
+
+# Installs extra codecs form multimedia users
+sudo apt-get install gstreamer0.10-plugins-ugly gstreamer0.10-ffmpeg libxine1-ffmpeg gxine mencoder libdvdread4 totem-mozilla icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 mpg321
+
