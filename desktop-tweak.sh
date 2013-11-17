@@ -26,3 +26,7 @@ gksu gedit /etc/default/apport
 # GSettings
 # Source: Comments from http://www.omgubuntu.co.uk/2013/10/turn-new-keyboard-applet-ubuntu-13-10
 # com.canonical.indicator.keyboard visible flag
+
+# Normal scroll bar
+# Source: http://www.noobslab.com/2013/10/tweaksthings-to-do-after-install-of.html
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
