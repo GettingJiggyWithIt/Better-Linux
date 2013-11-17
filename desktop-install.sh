@@ -1,5 +1,5 @@
 # Get a free personal license for Bitdefender AntiVirus here: http://www.bitdefender.com/site/Products/ScannerLicense/
-
+# Sublime Text 3 available from their website
 # Update system
 sudo aptitude update && sudo aptitude full-upgrade
 
@@ -78,3 +78,13 @@ sudo apt-get install libappindicator1
 sudo add-apt-repository ppa:numix/ppa
 sudo apt-get update
 sudo apt-get install numix-gtk-theme numix-icon-theme numix-wallpaper-saucy
+
+# Installs Autokey
+sudo apt-get install autokey-gtk
+
+# Installs Chromium codecs
+sudo apt-get install chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra
+
+# Installs Tomahawk music player
+sudo add-apt-repository -y ppa:tomahawk/ppa; sudo apt-get update
+sudo apt-get install tomahawk
