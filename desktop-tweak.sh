@@ -3,6 +3,7 @@ gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-ama
 
 # Remove amazon.desktop
 sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
+
 # Disable guest account and disable remote login (commented since I use autologin)
 # sudo gedit /etc/lightdm/lightdm.conf
 # allow-guest=false
@@ -29,8 +30,7 @@ sudo rm -rf ~/.local/share/ubuntuone
 rm -rf ~/.cache/ubuntuone
 rm -rf ~/.config/ubuntuone
 mv ~/Ubuntu\ One/ ~/UbuntuOne_old/``
+sudo apt-get purge ubuntuone-installer*
 sudo apt-get purge ubuntuone-client python-ubuntuone-storage*
 
-# Just to make sure.. (oddly enough this reinstall Ubuntu
-sudo apt-get remove --purge ubuntuone-*
-
+# Remove One Music from side bar
