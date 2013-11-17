@@ -52,3 +52,11 @@ sudo tlp start
 # Installs extra codecs form multimedia users
 sudo apt-get install gstreamer0.10-plugins-ugly gstreamer0.10-ffmpeg libxine1-ffmpeg gxine mencoder libdvdread4 totem-mozilla icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 mpg321
 
+# Installs MIXXX
+sudo add-apt-repository ppa:mixxx/mixxx
+sudo apt-get update
+sudo apt-get install mixxx libportaudio2
+
+gparted dropbox nitro
+free license for Bitdefender
+http://www.bitdefender.com/site/Products/ScannerLicense/
