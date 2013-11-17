@@ -37,3 +37,6 @@ sudo apt-get purge ubuntuone-client python-ubuntuone-storage*
 
 # Remove One Music from side bar
 sudo rm /usr/share/applications/UbuntuOneMusiconeubuntucom.desktop
+
+# Remove Rhythmbox music player (in favor of Tomahawk)
+sudo apt-get remove rhythmbox
