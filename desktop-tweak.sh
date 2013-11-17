@@ -13,7 +13,9 @@ sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
 gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
 
 # Disables crash reporting
-sed -i "s/enabled=1/enabled=0/g" /etc/default/apport
+sudo service apport stop
+sudo sed -i "s/enabled=1/enabled=0/g" /etc/default/apport
+sudo apt-get purge apport
 
 # Turn off Keyboard menu icon
 gsettings set com.canonical.indicator.keyboard visible false
@@ -21,15 +23,15 @@ gsettings set com.canonical.indicator.keyboard visible false
 # Uncomment the following two lines in /etc/apt/sources.list to enable downloads from "Canonical providers"
 # deb http://archive.canonical.com/ubuntu saucy partner
 # deb-src http://archive.canonical.com/ubuntu saucy partner
-sed -i "s/# deb http:\/\/archive.canonical.com\/ubuntu saucy partner/deb http:\/\/archive.canonical.com\/ubuntu saucy partner/g" /etc/apt/sources.list
-sed -i "s/# deb-src http:\/\/archive.canonical.com\/ubuntu saucy partner/deb-src http:\/\/archive.canonical.com\/ubuntu saucy partner/g" /etc/apt/sources.list
+sudo sed -i "s/# deb http:\/\/archive.canonical.com\/ubuntu saucy partner/deb http:\/\/archive.canonical.com\/ubuntu saucy partner/g" /etc/apt/sources.list
+sudo sed -i "s/# deb-src http:\/\/archive.canonical.com\/ubuntu saucy partner/deb-src http:\/\/archive.canonical.com\/ubuntu saucy partner/g" /etc/apt/sources.list
 
 # Completely remove Ubuntu One
-killall ubuntuone-login ubuntuone-preferences ubuntuone-syncdaemon
+sudo killall ubuntuone-login ubuntuone-preferences ubuntuone-syncdaemon
 sudo rm -rf ~/.local/share/ubuntuone
-rm -rf ~/.cache/ubuntuone
-rm -rf ~/.config/ubuntuone
-mv ~/Ubuntu\ One/ ~/UbuntuOne_old/``
+sudo rm -rf ~/.cache/ubuntuone
+sudo rm -rf ~/.config/ubuntuone
+sudo mv ~/Ubuntu\ One/ ~/UbuntuOne_old/``
 sudo apt-get purge ubuntuone-installer*
 sudo apt-get purge ubuntuone-client python-ubuntuone-storage*
 
