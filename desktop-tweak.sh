@@ -46,3 +46,6 @@ sudo apt-get remove rhythmbox
 
 # Remove Soduku
 sudo apt-get purge --auto-remove sudoku
+
+# Remove Thunderbird (in favor of Geary)
+sudo apt-get purge thunderbird*
