@@ -1,5 +1,8 @@
 #!/bin/bash
-
+# Add repos
+sudo add-apt-repository -y ppa:tomahawk/ppa
+sudo add-apt-repository -y ppa:numix/ppa
+sudo add-apt-repository -y ppa:linrunner/tlp
 # Get a free personal license for Bitdefender AntiVirus here: http://www.bitdefender.com/site/Products/ScannerLicense/
 # Sublime Text 3 available from their website
 # Update system
@@ -42,10 +45,7 @@ sudo apt-get install flashplugin-installer
 # Installs compression/decompression
 sudo apt-get install p7zip-rar p7zip-full unace unrar zip unzip sharutils rar uudeview mpack arj cabextract file-roller
 
-# Installs TLP - power management settings
-# Source: http://itsfoss.com/things-to-do-after-installing-ubuntu-13-10/
-sudo add-apt-repository ppa:linrunner/tlp
-sudo apt-get update
+# Installs TLP - automatic power management settings
 sudo apt-get install tlp tlp-rdw
 sudo tlp start
 
@@ -64,11 +64,6 @@ sudo apt-get install mixxx libportaudio2
 # Installs Filezilla
 sudo apt-get install filezilla
 
-# Installs Calendar Indicator
-sudo add-apt-repository ppa:noobslab/indicators
-sudo apt-get update
-sudo apt-get install calendar-indicator
-
 # Partition manager
 sudo apt-get install gparted
 
@@ -77,8 +72,6 @@ sudo apt-get install nautilus-dropbox
 sudo apt-get install libappindicator1
 
 # Install Numix theme
-sudo add-apt-repository ppa:numix/ppa
-sudo apt-get update
 sudo apt-get install numix-gtk-theme numix-icon-theme numix-wallpaper-saucy
 
 # Installs Autokey
@@ -88,5 +81,4 @@ sudo apt-get install autokey-gtk
 sudo apt-get install chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra
 
 # Installs Tomahawk music player
-sudo add-apt-repository -y ppa:tomahawk/ppa; sudo apt-get update
 sudo apt-get install tomahawk
