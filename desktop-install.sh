@@ -37,3 +37,12 @@ sudo apt-get install laptop-mode-tools
 sudo add-apt-repository ppa:ed10vi86/video
 sudo apt-get update
 sudo apt-get install vlc
+
+# Source: http://itsfoss.com/things-to-do-after-installing-ubuntu-13-10/
+# Installs flash plugin
+sudo apt-get install flashplugin-installer
+
+# Installs rar support
+sudo apt-get install rar
+
+
