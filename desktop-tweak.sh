@@ -1,3 +1,4 @@
+#!/bin/bash
 # Props to anyone who can figure out the gsettings set that disabled the Onboard menu icon! Pull request would be much appreciated!
 
 # Removes Amazon / shopping scopes
