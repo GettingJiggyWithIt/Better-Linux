@@ -49,3 +49,6 @@ sudo apt-get purge --auto-remove sudoku
 
 # Remove Thunderbird (in favor of Geary)
 sudo apt-get purge thunderbird*
+
+# Turn Onboard off (may not need this - could be due to my own fiddling with settings)
+gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
