@@ -1,8 +1,9 @@
 #!/bin/bash
 # Add repos
-sudo add-apt-repository -y ppa:tomahawk/ppa
-sudo add-apt-repository -y ppa:numix/ppa
-sudo add-apt-repository -y ppa:linrunner/tlp
+sudo add-apt-repository -y ppa:tomahawk/ppa # For Tomahawk music player
+sudo add-apt-repository -y ppa:numix/ppa # For Numix GTK theme
+sudo add-apt-repository -y ppa:linrunner/tlp # For TLP automatic power management
+echo "deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu saucy/" >> /etc/apt/sources.list
 # Get a free personal license for Bitdefender AntiVirus here: http://www.bitdefender.com/site/Products/ScannerLicense/
 # Sublime Text 3 available from their website
 # Update system
