@@ -17,3 +17,8 @@ sudo add-apt-repository ppa:noobslab/apps
 sudo apt-get update
 sudo apt-get install open-as-administrator
 nautilus -q
+
+# Disables crash reporting
+# Source: http://itsfoss.com/things-to-do-after-installing-ubuntu-13-10/
+gksu gedit /etc/default/apport
+# Set # sudo service apport start force_start=1 enabled=1 to 0
