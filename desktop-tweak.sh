@@ -1,3 +1,5 @@
+# Props to anyone who can figure out the gsettings set that disabled the Onboard menu icon! Pull request would be much appreciated!
+
 # Removes Amazon / shopping scopes
 gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']"
 
