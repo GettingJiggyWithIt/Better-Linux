@@ -6,3 +6,13 @@ lsb_release -a # Gets Ubuntu version
 netstat -anltp | grep "LISTEN" # See all open ports
 python -m SimpleHTTPServer # Start web server using current directory tree on port 8000
 make terminal look cool .bashrc/bashprofile
+Dropbox, spotify, deluge
+nagios
+git GIMP?
+configure selinux tor
+http://sourceforge.net/projects/phpvirtualbox/
+https://code.google.com/p/autokey/
+http://free.avg.com/us-en/download.prd-alf
+Rsync Skype Mixxx
+
+c9.io
