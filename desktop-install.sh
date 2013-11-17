@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Get a free personal license for Bitdefender AntiVirus here: http://www.bitdefender.com/site/Products/ScannerLicense/
 # Sublime Text 3 available from their website
 # Update system
