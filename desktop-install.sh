@@ -13,6 +13,7 @@ sudo sh -c "echo 'deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu saucy/' >> /
 sudo add-apt-repository ppa:tomahawk/ppa
 sudo add-apt-repository ppa:numix/ppa
 sudo add-apt-repository ppa:linrunner/tlp
+sudo add-apt-repository ppa:rquillo/ansible
 
 # Update system
 sudo apt-get update && sudo apt-get upgrade
@@ -97,3 +98,6 @@ sudo apt-get install vim
 
 # Install R
 sudo apt-get install r-base
+
+# Install Ansible
+sudo apt-get install ansible
