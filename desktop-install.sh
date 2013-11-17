@@ -3,7 +3,7 @@
 # Get a free personal license for Bitdefender AntiVirus here: http://www.bitdefender.com/site/Products/ScannerLicense/
 # Sublime Text 3 available from their website
 # Update system
-sudo aptitude update && sudo aptitude full-upgrade
+sudo apt-get update && sudo apt-get upgrade
 
 # Installs System Load Indicator
 sudo apt-get install indicator-multiload
