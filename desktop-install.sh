@@ -1,5 +1,7 @@
+# Get a free personal license for Bitdefender AntiVirus here: http://www.bitdefender.com/site/Products/ScannerLicense/
+
 # Update system
-sudo apt-get update
+sudo aptitude update && sudo aptitude full-upgrade
 
 # Installs System Load Indicator
 sudo apt-get install indicator-multiload
@@ -65,10 +67,14 @@ sudo add-apt-repository ppa:noobslab/indicators
 sudo apt-get update
 sudo apt-get install calendar-indicator
 
-gparted dropbox nitro
-free license for Bitdefender
-http://www.bitdefender.com/site/Products/ScannerLicense/
+# Partition manager
+sudo apt-get install gparted
 
+# Install Dropbox and indicator
+sudo apt-get install nautilus-dropbox
+sudo apt-get install libappindicator1
+
+# Install Numix theme
 sudo add-apt-repository ppa:numix/ppa
-
+sudo apt-get update
 sudo apt-get install numix-gtk-theme numix-icon-theme numix-wallpaper-saucy
