@@ -48,7 +48,15 @@ sudo add-apt-repository ppa:linrunner/tlp
 sudo apt-get update
 sudo apt-get install tlp tlp-rdw
 sudo tlp start
-
+sudo apt-get install chromium-browser 
+sudo apt-get install unity-tweak-tool 
+sudo apt-get install skype
+sudo add-apt-repository ppa:me-davidsansome/clementine
+sudo apt-get update
+sudo apt-get install clementine
+sudo add-apt-repository ppa:cooperjona/nitrotasks
+sudo apt-get update
+sudo apt-get install nitrotasks
 # Installs extra codecs form multimedia users
 sudo apt-get install gstreamer0.10-plugins-ugly gstreamer0.10-ffmpeg libxine1-ffmpeg gxine mencoder libdvdread4 totem-mozilla icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 mpg321
 
@@ -57,6 +65,16 @@ sudo add-apt-repository ppa:mixxx/mixxx
 sudo apt-get update
 sudo apt-get install mixxx libportaudio2
 
+sudo add-apt-repository ppa:noobslab/indicators
+sudo apt-get update
+sudo apt-get install calendar-indicator
+
 gparted dropbox nitro
 free license for Bitdefender
 http://www.bitdefender.com/site/Products/ScannerLicense/
+sudo apt-get install filezilla
+sudo add-apt-repository ppa:numix/ppa
+
+sudo apt-get update
+
+sudo apt-get install numix-gtk-theme numix-icon-theme numix-wallpaper-saucy
