@@ -40,3 +40,6 @@ sudo rm /usr/share/applications/UbuntuOneMusiconeubuntucom.desktop
 
 # Remove Rhythmbox music player (in favor of Tomahawk)
 sudo apt-get remove rhythmbox
+
+# Remove Soduku
+sudo apt-get purge --auto-remove sudoku
