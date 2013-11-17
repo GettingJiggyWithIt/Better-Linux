@@ -30,3 +30,4 @@ gksu gedit /etc/default/apport
 # Normal scroll bar
 # Source: http://www.noobslab.com/2013/10/tweaksthings-to-do-after-install-of.html
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
+# opposite: gsettings reset com.canonical.desktop.interface scrollbar-mode
