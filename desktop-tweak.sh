@@ -34,3 +34,4 @@ sudo apt-get purge ubuntuone-installer*
 sudo apt-get purge ubuntuone-client python-ubuntuone-storage*
 
 # Remove One Music from side bar
+sudo rm /usr/share/applications/UbuntuOneMusiconeubuntucom.desktop
