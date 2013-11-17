@@ -22,3 +22,7 @@ nautilus -q
 # Source: http://itsfoss.com/things-to-do-after-installing-ubuntu-13-10/
 gksu gedit /etc/default/apport
 # Set # sudo service apport start force_start=1 enabled=1 to 0
+
+# GSettings
+# Source: Comments from http://www.omgubuntu.co.uk/2013/10/turn-new-keyboard-applet-ubuntu-13-10
+# com.canonical.indicator.keyboard visible flag
