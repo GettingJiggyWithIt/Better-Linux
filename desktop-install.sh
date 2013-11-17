@@ -10,9 +10,9 @@ gpg -a --export E084DAB9 | sudo apt-key add -
 
 # Add repos
 sudo sh -c "echo 'deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu saucy/' >> /etc/apt/sources.list" # For R
-sudo add-apt-repository -y ppa:tomahawk/ppa
-sudo add-apt-repository -y ppa:numix/ppa
-sudo add-apt-repository -y ppa:linrunner/tlp
+sudo add-apt-repository ppa:tomahawk/ppa
+sudo add-apt-repository ppa:numix/ppa
+sudo add-apt-repository ppa:linrunner/tlp
 
 # Update system
 sudo apt-get update && sudo apt-get upgrade
