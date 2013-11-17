@@ -30,9 +30,6 @@ sudo apt-get install icedtea-7-plugin openjdk-7-jre
 # Installs Java developement support
 sudo apt-get install openjdk-7-jdk
 
-# Installs Laptop mode tools
-sudo apt-get install laptop-mode-tools
-
 # Installs latest VLC player
 sudo add-apt-repository ppa:ed10vi86/video
 sudo apt-get update
@@ -42,7 +39,12 @@ sudo apt-get install vlc
 # Installs flash plugin
 sudo apt-get install flashplugin-installer
 
-# Installs rar support
-sudo apt-get install rar
+# Installs compression/decompression
+sudo apt-get install p7zip-rar p7zip-full unace unrar zip unzip sharutils rar uudeview mpack arj cabextract file-roller
 
-
+# Installs TLP - power management settings
+# Source: http://itsfoss.com/things-to-do-after-installing-ubuntu-13-10/
+sudo add-apt-repository ppa:linrunner/tlp
+sudo apt-get update
+sudo apt-get install tlp tlp-rdw
+sudo tlp start
