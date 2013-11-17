@@ -3,3 +3,4 @@ Best music app? Musique Rhythmbox Banshee .. Owncloud support
 Geary vs thunderbird?
 Brackets/Chromium Live Reload
 lsb_release -a # Gets Ubuntu version
+netstat -anltp | grep "LISTEN" # See all open ports
