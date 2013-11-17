@@ -1,4 +1,0 @@
-lsb_release -a # Gets Ubuntu version
-netstat -anltp | grep "LISTEN" # See all open ports
-python -m SimpleHTTPServer # Start web server using current directory tree on port 8000
-nagios
