@@ -1,33 +1,36 @@
 # Removes Amazon / shopping scopes
-# Source: http://www.webupd8.org/2013/10/how-to-disable-amazon-shopping.html
 gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']"
 
-# Disable guest account and disable remote login
+# Remove amazon.desktop
+sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
+# Disable guest account and disable remote login (commented since I use autologin)
 # sudo gedit /etc/lightdm/lightdm.conf
 # allow-guest=false
 # greeter-show-remote-login=false
 
 # Move Close/Minimize/Maximize to right
-# http://www.noobslab.com/2013/04/tweaksthings-to-do-after-install-of.html
 gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
 
-# Adds open as administrator to right-click
-# Source: http://www.noobslab.com/2013/10/add-open-as-rootadministrator-option-in.html
-sudo add-apt-repository ppa:noobslab/apps
-sudo apt-get update
-sudo apt-get install open-as-administrator
-nautilus -q
-
 # Disables crash reporting
-# Source: http://itsfoss.com/things-to-do-after-installing-ubuntu-13-10/
-gksu gedit /etc/default/apport
-# Set # sudo service apport start force_start=1 enabled=1 to 0
+sed -i "s/enabled=1/enabled=0/g" /etc/default/apport
 
-# GSettings
-# Source: Comments from http://www.omgubuntu.co.uk/2013/10/turn-new-keyboard-applet-ubuntu-13-10
-# com.canonical.indicator.keyboard visible flag
+# Turn off Keyboard menu icon
+gsettings set com.canonical.indicator.keyboard visible false
 
-# Normal scroll bar
-# Source: http://www.noobslab.com/2013/10/tweaksthings-to-do-after-install-of.html
-gsettings set com.canonical.desktop.interface scrollbar-mode normal
-# opposite: gsettings reset com.canonical.desktop.interface scrollbar-mode
+# Uncomment the following two lines in /etc/apt/sources.list to enable downloads from "Canonical providers"
+# deb http://archive.canonical.com/ubuntu saucy partner
+# deb-src http://archive.canonical.com/ubuntu saucy partner
+sed -i "s/# deb http:\/\/archive.canonical.com\/ubuntu saucy partner/deb http:\/\/archive.canonical.com\/ubuntu saucy partner/g" /etc/apt/sources.list
+sed -i "s/# deb-src http:\/\/archive.canonical.com\/ubuntu saucy partner/deb-src http:\/\/archive.canonical.com\/ubuntu saucy partner/g" /etc/apt/sources.list
+
+# Completely remove Ubuntu One
+killall ubuntuone-login ubuntuone-preferences ubuntuone-syncdaemon
+sudo rm -rf ~/.local/share/ubuntuone
+rm -rf ~/.cache/ubuntuone
+rm -rf ~/.config/ubuntuone
+mv ~/Ubuntu\ One/ ~/UbuntuOne_old/``
+sudo apt-get purge ubuntuone-client python-ubuntuone-storage*
+
+# Just to make sure.. (oddly enough this reinstall Ubuntu
+sudo apt-get remove --purge ubuntuone-*
+
