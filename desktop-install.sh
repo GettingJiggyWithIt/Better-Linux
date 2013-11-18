@@ -9,11 +9,17 @@ gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
 gpg -a --export E084DAB9 | sudo apt-key add -
 
 # Add repos
-sudo sh -c "echo 'deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu saucy/' >> /etc/apt/sources.list" # For R
-sudo add-apt-repository ppa:tomahawk/ppa
-sudo add-apt-repository ppa:numix/ppa
-sudo add-apt-repository ppa:linrunner/tlp
-sudo add-apt-repository ppa:rquillo/ansible
+sudo sh -c "echo 'deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu saucy/' >> /etc/apt/sources.list" # For R packages
+sudo add-apt-repository ppa:tomahawk/ppa # Tomahawk music player repo
+sudo add-apt-repository ppa:numix/ppa # Numix theme repo
+sudo add-apt-repository ppa:linrunner/tlp # TLP power management repo
+sudo add-apt-repository ppa:rquillo/ansible # Ansible repo
+sudo add-apt-repository ppa:atareao/atareao # Weather indicator repo
+
+# Weather indicator
+sudo add-apt-repository ppa:atareao/atareao
+sudo apt-get update
+sudo apt-get install my-weather-indicator
 
 # Update system
 sudo apt-get update && sudo apt-get upgrade
@@ -23,9 +29,6 @@ sudo apt-get install indicator-multiload
 
 # Installs Chromium - developer version of Chrome (open source)
 sudo apt-get install chromium-browser 
-
-# Installs Diodon Clipboard Manger
-sudo apt-get install diodon diodon-plugins
 
 # Installs Ubuntu Tweak Tool
 sudo apt-get install unity-tweak-tool
@@ -64,9 +67,6 @@ sudo apt-get install skype
 
 # Installs Nitrotasks
 sudo apt-get install nitrotasks
-
-# Installs extra codecs form multimedia users
-sudo apt-get install gstreamer0.10-plugins-ugly gstreamer0.10-ffmpeg libxine1-ffmpeg gxine mencoder libdvdread4 totem-mozilla icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 mpg321
 
 # Installs MIXXX
 sudo apt-get install mixxx libportaudio2
