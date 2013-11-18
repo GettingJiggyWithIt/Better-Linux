@@ -15,10 +15,16 @@ sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
 # Move Close/Minimize/Maximize to right
 gsettings set org.gnome.desktop.wm.preferences button-layout ':minimize,maximize,close'
 
+# Changes theme without Unity Tweak Tool
+gsettings set org.gnome.desktop.interface gtk-theme 'Numix Daily'
+
+# Changes icon theme without Unity Tweak Tool
+gsettings set org.gnome.desktop.interface icon-theme 'Numix'
+
 # Disables crash reporting
 sudo service apport stop
 sudo sed -i "s/enabled=1/enabled=0/g" /etc/default/apport
-sudo apt-get purge apport
+sudo apt-get remove --purge apport
 
 # Turn off Keyboard menu icon
 gsettings set com.canonical.indicator.keyboard visible false
@@ -31,24 +37,19 @@ sudo sed -i "s/# deb-src http:\/\/archive.canonical.com\/ubuntu saucy partner/de
 
 # Completely remove Ubuntu One
 sudo killall ubuntuone-login ubuntuone-preferences ubuntuone-syncdaemon
-sudo rm -rf ~/.local/share/ubuntuone
-sudo rm -rf ~/.cache/ubuntuone
-sudo rm -rf ~/.config/ubuntuone
-sudo mv ~/Ubuntu\ One/ ~/UbuntuOne_old/``
-sudo apt-get purge ubuntuone-installer*
-sudo apt-get purge ubuntuone-client python-ubuntuone-storage*
+sudo apt-get remove --purge ubuntuone*
 
 # Remove One Music from side bar
 sudo rm /usr/share/applications/UbuntuOneMusiconeubuntucom.desktop
 
 # Remove Rhythmbox music player (in favor of Tomahawk)
-sudo apt-get remove rhythmbox
+sudo apt-get remove --purge rhythmbox
 
 # Remove Soduku
-sudo apt-get purge --auto-remove sudoku
+sudo apt-get remove --purge sudoku
 
 # Remove Thunderbird (in favor of Geary)
-sudo apt-get purge thunderbird*
+sudo apt-get remove --purge thunderbird*
 
 # Turn Onboard off (may not need this - could be due to my own fiddling with settings)
 gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
