@@ -8,4 +8,5 @@ Find your drive ID:
 
     sudo fdisk -l
 Make a live USB key in Linux:
-        sudo dd if=/home/[Your User Name]/Downloads/[Name of the Downloaded ISO].iso of=/dev/[Drive ID Here] bs=8M
+        
+    sudo dd if=/home/[Your User Name]/Downloads/[Name of the Downloaded ISO].iso of=/dev/[Drive ID Here] bs=8M
