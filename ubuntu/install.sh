@@ -16,9 +16,10 @@ sudo add-apt-repository ppa:linrunner/tlp # TLP power management repo
 sudo add-apt-repository ppa:rquillo/ansible # Ansible repo
 sudo add-apt-repository ppa:atareao/atareao # Weather indicator repo
 
-# Weather indicator
-sudo add-apt-repository ppa:atareao/atareao
+# Update now that the repos are added
 sudo apt-get update
+
+# Weather indicator
 sudo apt-get install my-weather-indicator
 
 # Update system
@@ -78,8 +79,8 @@ sudo apt-get install filezilla
 sudo apt-get install gparted
 
 # Install Dropbox and indicator
-sudo apt-get install nautilus-dropbox
-sudo apt-get install libappindicator1
+# sudo apt-get install nautilus-dropbox
+# sudo apt-get install libappindicator1
 
 # Install Numix theme
 sudo apt-get install numix-gtk-theme numix-icon-theme numix-wallpaper-saucy
@@ -101,3 +102,9 @@ sudo apt-get install r-base
 
 # Install Ansible
 sudo apt-get install ansible
+
+# Install Arduino IDE
+sudo apt-get install arduino
+
+# Install LibreOffice-Base
+sudo apt-get install libreoffice-base
