@@ -108,3 +108,6 @@ sudo apt-get install arduino
 
 # Install LibreOffice-Base
 sudo apt-get install libreoffice-base
+
+# Install Nautilus-open-terminal (adds open in Terminal to right click at any location)
+sudo apt-get install nautilus-open-terminal
