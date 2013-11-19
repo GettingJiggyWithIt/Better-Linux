@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Props to anyone who can figure out the gsettings set that disabled the Onboard menu icon! Pull request would be much appreciated!
 # Select Numix/Numix Theme Icons from Unity Tweak Tool in shell script --- any ideas on how to do this?
 # Removes Amazon / shopping scopes
