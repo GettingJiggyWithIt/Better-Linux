@@ -10,3 +10,4 @@ su -c "curl http://master.dl.sourceforge.net/project/fedorautils/fedorautils.rep
 # Theme:http://gnome-look.org/content/show.php/Zukitwo?content=140562
 sudo yum install gtk-murrine-engine gtk2-engines
 sudo yum install gnome-tweak-tool
+# sudo unzip /home/$username/Downloads/$themefilename -d /usr/share/themes # Adds theme for all users
