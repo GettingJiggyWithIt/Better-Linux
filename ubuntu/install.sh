@@ -14,13 +14,6 @@ sudo add-apt-repository ppa:tomahawk/ppa # Tomahawk music player repo
 sudo add-apt-repository ppa:numix/ppa # Numix theme repo
 sudo add-apt-repository ppa:linrunner/tlp # TLP power management repo
 sudo add-apt-repository ppa:rquillo/ansible # Ansible repo
-sudo add-apt-repository ppa:atareao/atareao # Weather indicator repo
-
-# Update now that the repos are added
-sudo apt-get update
-
-# Weather indicator
-sudo apt-get install my-weather-indicator
 
 # Update system
 sudo apt-get update && sudo apt-get upgrade
@@ -38,26 +31,26 @@ sudo apt-get install unity-tweak-tool
 sudo apt-get install ubuntu-restricted-extras
 
 # Installs encrypted DVD support
-sudo apt-get install libdvdread4
-sudo /usr/share/doc/libdvdread4/install-css.sh
+# sudo apt-get install libdvdread4
+# sudo /usr/share/doc/libdvdread4/install-css.sh
 
 # Installs unrestricted codecs for video editors/transcoders
-sudo apt-get install libavformat-extra-53 libavcodec-extra-53
+# sudo apt-get install libavformat-extra-53 libavcodec-extra-53
 
 # Installs Java User support
-sudo apt-get install icedtea-7-plugin openjdk-7-jre
+# sudo apt-get install icedtea-7-plugin openjdk-7-jre
 
 # Installs Java developement support
-sudo apt-get install openjdk-7-jdk
+# sudo apt-get install openjdk-7-jdk
 
 # Installs VLC player
-sudo apt-get install vlc
+# sudo apt-get install vlc
 
 # Installs flash plugin
-sudo apt-get install flashplugin-installer
+# sudo apt-get install flashplugin-installer
 
 # Installs compression/decompression
-sudo apt-get install p7zip-rar p7zip-full unace unrar zip unzip sharutils rar uudeview mpack arj cabextract file-roller
+# sudo apt-get install p7zip-rar p7zip-full unace unrar zip unzip sharutils rar uudeview mpack arj cabextract file-roller
 
 # Installs TLP - automatic power management settings
 sudo apt-get install tlp tlp-rdw
@@ -70,13 +63,13 @@ sudo apt-get install skype
 sudo apt-get install nitrotasks
 
 # Installs MIXXX
-sudo apt-get install mixxx libportaudio2
+# sudo apt-get install mixxx libportaudio2
 
 # Installs Filezilla
 sudo apt-get install filezilla
 
-# Partition manager
-sudo apt-get install gparted
+# Partition manager 
+# sudo apt-get install gparted
 
 # Install Dropbox and indicator
 # sudo apt-get install nautilus-dropbox
@@ -89,9 +82,10 @@ sudo apt-get install numix-gtk-theme numix-icon-theme numix-wallpaper-saucy
 sudo apt-get install autokey-gtk
 
 # Installs Chromium codecs
-sudo apt-get install chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra
+# sudo apt-get install chromium-codecs-ffmpeg chromium-codecs-ffmpeg-extra
 
-# Installs Tomahawk music player
+# Replace Rhythmbox with Tomahawk music player
+sudo apt-get remove rhythmbox*
 sudo apt-get install tomahawk
 
 # Install VIM
