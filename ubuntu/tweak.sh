@@ -8,6 +8,18 @@ gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-ama
 # Remove amazon.desktop
 sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
 
+# Remove Ubuntu 1 Music
+sudo rm /usr/share/applications/UbuntuOneMusiconeubuntucom.desktop
+
+# Remove xdiagnose menu
+sudo rm /usr/share/applications/xdiagnose.desktop 
+
+# Remove Landscape from menu
+sudo rm /usr/share/applications/landscape-client-settings.desktop
+
+# Remove orca from menu
+sudo rm /usr/share/applications/orca.desktop
+
 # Disable guest account and disable remote login (commented since I use autologin)
 # sudo gedit /etc/lightdm/lightdm.conf
 # allow-guest=false
