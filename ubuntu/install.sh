@@ -12,7 +12,7 @@ gpg -a --export E084DAB9 | sudo apt-key add -
 sudo sh -c "echo 'deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu saucy/' >> /etc/apt/sources.list" # For R packages
 sudo add-apt-repository ppa:tomahawk/ppa # Tomahawk music player repo
 sudo add-apt-repository ppa:numix/ppa # Numix theme repo
-sudo add-apt-repository ppa:linrunner/tlp # TLP power management repo
+# sudo add-apt-repository ppa:linrunner/tlp # TLP power management repo
 sudo add-apt-repository ppa:rquillo/ansible # Ansible repo
 
 # Update system
@@ -53,8 +53,8 @@ sudo apt-get install ubuntu-restricted-extras
 # sudo apt-get install p7zip-rar p7zip-full unace unrar zip unzip sharutils rar uudeview mpack arj cabextract file-roller
 
 # Installs TLP - automatic power management settings
-sudo apt-get install tlp tlp-rdw
-sudo tlp start
+# sudo apt-get install tlp tlp-rdw
+# sudo tlp start
 
 # Installs Skype
 sudo apt-get install skype
@@ -76,7 +76,7 @@ sudo apt-get install filezilla
 # sudo apt-get install libappindicator1
 
 # Install Numix theme
-sudo apt-get install numix-gtk-theme numix-icon-theme numix-wallpaper-saucy
+sudo apt-get install numix-gtk-theme numix-icon-theme-circle
 
 # Installs Autokey
 sudo apt-get install autokey-gtk
@@ -100,8 +100,8 @@ sudo apt-get install ansible
 # Install Arduino IDE
 sudo apt-get install arduino
 
-# Install LibreOffice-Base
-sudo apt-get install libreoffice-base
-
-# Install Nautilus-open-terminal (adds open in Terminal to right click at any location)
-sudo apt-get install nautilus-open-terminal
+# Install DNSCrypt
+# Source: http://www.webupd8.org/2014/08/encrypt-dns-traffic-in-ubuntu-with.html
+sudo add-apt-repository ppa:anton+/dnscrypt
+sudo apt-get update
+sudo apt-get install dnscrypt-proxy
