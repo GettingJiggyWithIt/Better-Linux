@@ -5,11 +5,11 @@
 
 # RStudio is available here: http://www.rstudio.com/ide/download/desktop
 # Add the repo SSL key for R
-gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
-gpg -a --export E084DAB9 | sudo apt-key add -
+# gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+# gpg -a --export E084DAB9 | sudo apt-key add -
 
 # Add repos
-sudo sh -c "echo 'deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu saucy/' >> /etc/apt/sources.list" # For R packages
+# sudo sh -c "echo 'deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu saucy/' >> /etc/apt/sources.list" # For R packages
 sudo add-apt-repository ppa:tomahawk/ppa # Tomahawk music player repo
 sudo add-apt-repository ppa:numix/ppa # Numix theme repo
 # sudo add-apt-repository ppa:linrunner/tlp # TLP power management repo
