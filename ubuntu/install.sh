@@ -13,7 +13,7 @@
 sudo add-apt-repository ppa:tomahawk/ppa # Tomahawk music player repo
 sudo add-apt-repository ppa:numix/ppa # Numix theme repo
 # sudo add-apt-repository ppa:linrunner/tlp # TLP power management repo
-sudo add-apt-repository ppa:rquillo/ansible # Ansible repo
+# OUTDATED: sudo add-apt-repository ppa:rquillo/ansible # Ansible repo
 
 # Update system
 sudo apt-get update && sudo apt-get upgrade
