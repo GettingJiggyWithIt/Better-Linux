@@ -1,22 +1,19 @@
 #!/bin/bash
 
-# Get a free personal license for Bitdefender AntiVirus here: http://www.bitdefender.com/site/Products/ScannerLicense/
 # Sublime Text 3 available from their website
 
-# RStudio is available here: http://www.rstudio.com/ide/download/desktop
-# Add the repo SSL key for R
-# gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
-# gpg -a --export E084DAB9 | sudo apt-key add -
-
 # Add repos
-# sudo sh -c "echo 'deb http://cran.cnr.Berkeley.edu/bin/linux/ubuntu saucy/' >> /etc/apt/sources.list" # For R packages
 sudo add-apt-repository ppa:tomahawk/ppa # Tomahawk music player repo
 sudo add-apt-repository ppa:numix/ppa # Numix theme repo
-# sudo add-apt-repository ppa:linrunner/tlp # TLP power management repo
-# OUTDATED: sudo add-apt-repository ppa:rquillo/ansible # Ansible repo
 
 # Update system
 sudo apt-get update && sudo apt-get upgrade
+
+# MAKE MY FUCKING KEYS MATCH UP YOU FUCKERS!
+# Source: https://github.com/simonclausen/dnscrypt-autoinstall
+wget https://raw.github.com/simonclausen/dnscrypt-autoinstall/master/dnscrypt-autoinstall.sh
+chmod +x dnscrypt-autoinstall.sh
+./dnscrypt-autoinstall.sh
 
 # Installs System Load Indicator
 sudo apt-get install indicator-multiload
