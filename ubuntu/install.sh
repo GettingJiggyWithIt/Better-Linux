@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # Sublime Text 3 available from their website
+# Crack Source: https://gist.github.com/YoussefKababe/aa064a1be62a55ac87bb
+# Crack Command: printf '\x39' | dd seek=$((0xcbe3)) conv=notrunc bs=1 of=/path/to/sublime_text
 
 # Add repos
 sudo add-apt-repository ppa:tomahawk/ppa # Tomahawk music player repo
