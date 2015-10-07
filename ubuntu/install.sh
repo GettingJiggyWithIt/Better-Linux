@@ -9,7 +9,6 @@ sudo add-apt-repository ppa:numix/ppa # Numix theme repo
 # Update system
 sudo apt-get update && sudo apt-get upgrade
 
-# MAKE MY FUCKING KEYS MATCH UP YOU FUCKERS!
 # Source: https://github.com/simonclausen/dnscrypt-autoinstall
 wget https://raw.github.com/simonclausen/dnscrypt-autoinstall/master/dnscrypt-autoinstall.sh
 chmod +x dnscrypt-autoinstall.sh
