@@ -48,19 +48,6 @@ sudo apt-get install ubuntu-restricted-extras
 # Installs compression/decompression
 # sudo apt-get install p7zip-rar p7zip-full unace unrar zip unzip sharutils rar uudeview mpack arj cabextract file-roller
 
-# Installs TLP - automatic power management settings
-# sudo apt-get install tlp tlp-rdw
-# sudo tlp start
-
-# Installs Skype
-sudo apt-get install skype
-
-# Installs Nitrotasks
-sudo apt-get install nitrotasks
-
-# Installs MIXXX
-# sudo apt-get install mixxx libportaudio2
-
 # Installs Filezilla
 sudo apt-get install filezilla
 
@@ -90,14 +77,5 @@ sudo apt-get install vim
 # Install R
 sudo apt-get install r-base
 
-# Install Ansible
-sudo apt-get install ansible
-
 # Install Arduino IDE
 sudo apt-get install arduino
-
-# Install DNSCrypt
-# Source: http://www.webupd8.org/2014/08/encrypt-dns-traffic-in-ubuntu-with.html
-sudo add-apt-repository ppa:anton+/dnscrypt
-sudo apt-get update
-sudo apt-get install dnscrypt-proxy
