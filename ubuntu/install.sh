@@ -89,3 +89,6 @@ sudo apt-get install virtualbox
 
 # Install Vagrant
 sudo apt-get install vagrant
+
+# Install OpenVPN Network Manager
+sudo apt-get install network-manager-openvpn
