@@ -79,3 +79,11 @@ sudo apt-get install r-base
 
 # Install Arduino IDE
 sudo apt-get install arduino
+
+# Install Virtualbox
+sudo apt-get install virtualbox
+# Download http://download.virtualbox.org/virtualbox/4.3.26/Oracle_VM_VirtualBox_Extension_Pack-4.3.26-98988.vbox-extpack
+# Install into virtualbox
+
+# Install Vagrant
+sudo apt-get install vagrant
